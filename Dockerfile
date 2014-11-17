@@ -18,9 +18,6 @@ RUN wget --quiet http://download.jboss.org/wildfly/${WF_VERSION}/wildfly-${WF_VE
 	&& rm -rf /wildfly-${WF_VERSION}/welcome-content \
 	&& ln -s  /wildfly-${WF_VERSION} ${WF_HOME}
 
-# Define mountable directories.
-VOLUME ["/wildfly/standalone","/wildfly/domain"]
-
 # Define working directory.
 WORKDIR /wildfly
 
