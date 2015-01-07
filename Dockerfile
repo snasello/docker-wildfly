@@ -3,7 +3,7 @@
 # VERSION 0.0.1
 #
 
-FROM snasello/java:busybox-java8u20
+FROM snasello/java:debian-java8u25
 
 MAINTAINER Samuel Nasello <samuel.nasello@elosi.com>
 
