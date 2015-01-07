@@ -12,7 +12,7 @@ ENV WF_HOME /wildfly
 
 # Install Wildfly.
 
-RUN wget --quiet http://download.jboss.org/wildfly/${WF_VERSION}/wildfly-${WF_VERSION}.tar.gz -O /wildfly-${WF_VERSION}.tar.gz \
+RUN curl -kLOH "" http://download.jboss.org/wildfly/${WF_VERSION}/wildfly-${WF_VERSION}.tar.gz \
 	&& tar xfz /wildfly-${WF_VERSION}.tar.gz -C / \
 	&& rm -f /wildfly-${WF_VERSION}.tar.gz \
 	&& rm -rf /wildfly-${WF_VERSION}/welcome-content \
